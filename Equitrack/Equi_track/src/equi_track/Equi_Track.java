@@ -1,6 +1,7 @@
 package equi_track;
 
 import java.util.Scanner;
+import java.util.ArrayList;
 public class Equi_Track {
 
     /**
@@ -11,6 +12,8 @@ public class Equi_Track {
         String wait=null;
         Scanner Scan = new Scanner(System.in);
         Scanner Espera = new Scanner(System.in);
+ArrayList<String[]> equipos = new ArrayList<String[]>();
+
         do{
         
         System.out.println("========EQUITRACK========");
@@ -29,26 +32,31 @@ public class Equi_Track {
             case 1:
                 System.out.print("Pulse cualquier tecla para continuar: ");
                 //Aca va el nombre del metodo en el que programaron la accion
+                
                 wait=Espera.nextLine();
                 break;
             case 2:
                 System.out.print("Pulse cualquier tecla para continuar: ");
                  //Aca va el nombre del metodo en el que programaron la accion
+               Listar_equipo.listar(equipos);
                 wait=Espera.nextLine();
                 break;
             case 3:
                 System.out.print("Pulse cualquier tecla para continuar: ");
                  //Aca va el nombre del metodo en el que programaron la accion
+                  Buscar_equipos.buscar(equipos, Scan);
                 wait=Espera.nextLine();
                 break;                        
             case 4:
                 System.out.print("Pulse cualquier tecla para continuar: ");
                  //Aca va el nombre del metodo en el que programaron la accion
+                 Prestar_equipos.prestar(equipos, Scan);
                 wait=Espera.nextLine();
                 break;
             case 5:
                 System.out.print("Pulse cualquier tecla para continuar: ");
                  //Aca va el nombre del metodo en el que programaron la accion
+                 Devolver_equipos.devolver(equipos, Scan);
                  wait=Espera.nextLine();
                 break;
             case 6:
@@ -72,6 +80,8 @@ public class Equi_Track {
                  wait=Espera.nextLine();
             break;
         }
+        opcion = Scan.nextInt();
+        Scan.nextLine();
         System.out.println("=========================");
         
         }while(opcion!=0);
