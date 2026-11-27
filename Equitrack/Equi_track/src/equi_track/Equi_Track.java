@@ -32,7 +32,7 @@ ArrayList<String[]> equipos = new ArrayList<String[]>();
             case 1:
                 System.out.print("Pulse cualquier tecla para continuar: ");
                 //Aca va el nombre del metodo en el que programaron la accion
-                
+                Agregar_equipo.agregar(equipos, Scan);
                 wait=Espera.nextLine();
                 break;
             case 2:
@@ -67,6 +67,7 @@ ArrayList<String[]> equipos = new ArrayList<String[]>();
             case 7:
                 System.out.print("Pulse cualquier tecla para continuar: ");
                  //Aca va el nombre del metodo en el que programaron la accion
+                Eliminar_equipos.eliminar(equipos, Scan);
                 wait=Espera.nextLine();
                 break;
             case 0:
