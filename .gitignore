@@ -1,0 +1,27 @@
+
+# Archivos compilados de Java
+*.class
+bin/
+build/
+out/
+dist/
+
+# NetBeans
+/nbproject/private/
+
+# IntelliJ
+.idea/
+*.iml
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# Archivos temporales
+*.tmp
+*.log
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
